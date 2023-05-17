@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import category from '../data/category';
 
 const Footer = () => {
   return (
@@ -14,9 +16,15 @@ const Footer = () => {
                 <h2 className="text-lg font-medium mb-4">Menu</h2>
                 <ul className="list-none">
                   <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Home</a></li>
-                  <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Women Dresses</a></li>
-                  <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Shoes</a></li>
-                  <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Watches</a></li>
+                  <li className="mb-2 text-sm hover:text-gray-400">
+                    <Link to= {`/productCategory/${category[0]}`}>Women Dresses</Link> 
+                  </li>
+                  <li className="mb-2 text-sm hover:text-gray-400">
+                    <Link to= {`/productCategory/${category[1]}`}>Shoes</Link> 
+                  </li>
+                  <li className="mb-2 text-sm hover:text-gray-400">
+                    <Link to= {`/productCategory/${category[2]}`}>Watches</Link> 
+                  </li>
                   <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Sunglasses</a></li>
                   <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Membership</a></li>
                   <li className="mb-2"><a href="#" className="text-sm hover:text-gray-400">Blog</a></li>
