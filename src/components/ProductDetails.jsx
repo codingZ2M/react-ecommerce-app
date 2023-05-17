@@ -63,9 +63,9 @@ const ProductDetails = () => {
       </div> 
 
             {/* Similar Products Container  */}
-      <div className='mt-2 sm:mt-20 w-full flex flex-col items-center justify-center'>
-        <h2 className='flex justify-start items-start text-xl sm:text-2xl mt-6 sm:mt-12'> Similar Products </h2>
-        <div className='my-6 sm:my-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+      <div className='w-full flex flex-col items-center justify-center'>
+        <h2 className='flex justify-start items-start text-xl sm:text-2xl mt-6 sm:mt-12 font-medium'> Similar Products </h2>
+        <div className='grid gap-0 sm:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
            {
             similarProducts.map((product) => (
                 <Product key={product.id} product = {product}/> 

@@ -41,7 +41,7 @@ const Product = ( {product} ) => {
 export default Product
 
 const ProductContainer= tw.div`
-  flex flex-col items-center justify-center my-2 sm:my-8 
+  flex flex-col items-center justify-center my-6 sm:my-8 
 `;
 
 const ProductDetails = tw.div`

@@ -41,7 +41,7 @@ const FilteredProducts = ( {product} ) => {
 export default FilteredProducts;
 
 const ProductContainer= tw.div`
-  flex flex-col items-center justify-center my-12 sm:my-6
+  flex flex-col items-center justify-center my-6 
 `;
 
 const ProductDetails = tw.div`
